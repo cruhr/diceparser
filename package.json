@@ -1,0 +1,39 @@
+{
+  "name": "@cruhr/diceparser",
+  "version": "1.0.0",
+  "description": "A small string parser that converts dice notation to dice rolls",
+  "main": "diceparser.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "dice",
+    "parser",
+    "RNG"
+  ],
+  "author": "Carsten Ruhr",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "babel-jest": "^29.4.3",
+    "jest": "^29.4.3",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "diceparser.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cruhr/diceparser.git"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
+  }
+}

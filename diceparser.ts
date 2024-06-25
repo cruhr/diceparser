@@ -12,14 +12,21 @@ type Options = {
   defaultFaces: number
 }
 
-const defaulOptions = {
+const defaultOptions = {
   separator: DEFAULT_SEPARATOR,
   defaultFaces: DEFAULT_FACES,
 }
 
+/**
+ * Roll one or more dice according to the provided string and optional options.
+ * E.g. rollDice('2d10+12')
+ * @param str is the dice string to roll (e.g. '2d6+3')
+ * @param options are the options to customize the default dice rolling (change the separator from "d" to something else or the default number of sides)
+ * @returns
+ */
 export const rollDice = (
   str: string = DEFAULT_DICE,
-  { separator = 'd', defaultFaces = 6 }: Partial<Options> = defaulOptions
+  { separator = 'd', defaultFaces = 6 }: Partial<Options> = defaultOptions
 ) => {
   const tokenizedString = Array.from(str.toLowerCase())
 
@@ -46,12 +53,13 @@ export const rollDice = (
       }
     }
 
-    // not encoutered the "d", the current number is only a stright addition
+    // not encountered the "d", the current number is only a stright addition
     if (!multiplier) {
       sum += num
     }
   }
 
+  // loop through each character of the string and perform the according operation
   tokenizedString.forEach((c) => {
     const isNumber = !isNaN(c as any)
 

@@ -6,7 +6,8 @@
     "removeComments": true,
     "preserveConstEnums": true,
     "moduleResolution": "node",
-    "declaration": true
+    "declaration": true,
+    "lib": ["ESNext"]
   },
   "files": ["diceparser.ts"]
 }

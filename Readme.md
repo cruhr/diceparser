@@ -9,7 +9,7 @@ This way you can extend and change the libraries to your needs and you will neve
 
 ## Dice notation
 
-a small explainer what "dice notation" means. If you want to describe how many and what kind of dice to roll, you can
+A small explainer what "dice notation" means: If you want to describe how many and what kind of dice to roll, you can
 rely on a defacto standard notation which describes the number of dice, the faces they have and if there is a bonus applied.
 
 Example:

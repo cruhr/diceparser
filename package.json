@@ -1,6 +1,6 @@
 {
   "name": "@cruhr/diceparser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small string parser that converts dice notation to dice rolls",
   "main": "diceparser.js",
   "scripts": {
